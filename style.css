@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    padding: 30px 0;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+    background-image: linear-gradient(to top, #ccc, #eee);
+    box-shadow: 0 3px 5px #111;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.description h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Jura', sans-serif;
+}
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description strong,
+.description em,
+.description h2 {
+    display: inline-block;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+
+.description i {
+    font-style: normal;
+    border-bottom: 1px dotted;
+}
+
+.description h2 {
+    margin: 0 0 10px;
+    color: #ff6600;
+}
+
+.description h1,
+.description strong {
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.description ol {
+    padding-left: 20px;
+}
+
+.description ol:last-of-type {
+    margin-bottom: 15px;
+}
+
+.description ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
+
+.description span {
+    color: darkblue;
+}
+
+.description em {
+    color: #62a007;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.combinations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.grid {
+    width: 160px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-auto-rows: 40px;
+    background-color: #fff;
+}
+
+.cell {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.cell:nth-child(4), 
+.cell:nth-child(8), 
+.cell:nth-child(12), 
+.cell:nth-child(16) {
+    border-right: none;
+}
+
+.cell:nth-child(13), 
+.cell:nth-child(14), 
+.cell:nth-child(15), 
+.cell:nth-child(16) {
+    border-bottom: none;
+}
+
+.yellow {
+    background-color: rgb(238, 222, 2);
+}
+
+.blue {
+    background-color: rgb(17, 91, 228);
+}
+
+.red {
+    background-color: rgb(226, 19, 19);
+}
+
+.green {
+    background-color: rgb(15, 200, 15);
+}
+
+.empty {
+    background-color: grey;
+}
+
+.empty--sign {
+    position: relative;
+}
+
+.empty--sign::before,
+.empty--sign::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.empty--sign::before {
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+.empty--sign::after {
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    left: 35%;
+}
+
+.example {
+    margin-bottom: 20px;
+}

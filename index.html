@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Task 4</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Jura|Yanone+Kaffeesatz" rel="stylesheet">
+
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./game-style.css">
+</head>
+<body>
+
+    <div class="description">
+        <h1>Задание</h1>
+        
+        <p>Создать логическую игру.</p>
+
+        <em>Условия:</em>
+
+        <p>
+            Имеется 16 ячеек и 15 плиток разных цветов (4 красные, 4 синие, 4 жёлтые и 3 зелёные). Одна ячейка без плитки. Плитки должны быть перемешаны случайным образом. При клике на каждую плитку, она (плитка) должна передвинуться на соседнюю пустую ячейку. Передвигаться плитка может только горизонтально или вертикально. Если по соседству нет пустой ячейки, ничего не должно происходить. Необходимо по очереди собрать 3 комбинации: 4 желтые вертикально в первой колонке, 4 синие горизонтально в первом ряду, 4 красные диагонально из верхнего правого угла в нижний левый. При этом, в каждой комбинации, нижняя правая ячейка всегда должна быть пустой (она должна дополнительно визуально выделяться). Только при таком раскладе комбинация должна считаться собранной. Когда комбинация собрана, шкала прогресса должна заполниться (каждая выполненная комбинация - треть). Когда шкала прогресса достигнет 100%, должно появиться меню с поздравлением и предложением начать заново.
+        </p>
+
+        <p class="info">
+            После завершения сборки одной комбинации, плитки должны оставаться на своих местах, а сборка следующей комбинации начинается из этого же положения.
+        </p>
+
+        <h2>Комбинации:</h2>
+
+        <div class="combinations">
+            <div class="grid">
+                <div class="cell yellow"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                
+                <div class="cell yellow"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+                <div class="cell yellow"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+                <div class="cell yellow"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell empty empty--sign"></div>
+            </div>
+
+            <div class="grid">
+                <div class="cell blue"></div>
+                <div class="cell blue"></div>
+                <div class="cell blue"></div>
+                <div class="cell blue"></div>
+                
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell empty empty--sign"></div>
+            </div>
+
+            <div class="grid">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell red"></div>
+                
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell red"></div>
+                <div class="cell"></div>
+
+                <div class="cell"></div>
+                <div class="cell red"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+
+                <div class="cell red"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell empty empty--sign"></div>
+            </div>
+        </div>
+
+        <h2>Пример:</h2>
+
+        <div class="example">
+            <div class="grid">
+                <div class="cell blue"></div>
+                <div class="cell blue"></div>
+                <div class="cell yellow"></div>
+                <div class="cell red"></div>
+                
+                <div class="cell empty"></div>
+                <div class="cell yellow"></div>
+                <div class="cell blue"></div>
+                <div class="cell green"></div>
+
+                <div class="cell green"></div>
+                <div class="cell red"></div>
+                <div class="cell yellow"></div>
+                <div class="cell blue"></div>
+
+                <div class="cell yellow"></div>
+                <div class="cell red"></div>
+                <div class="cell green"></div>
+                <div class="cell red"></div>
+            </div>
+        </div>
+
+        <strong>Особенности:</strong>
+    
+        <ol>
+            <li>Создать все необходимые HTML-элементы в JS, а не в HTML</li>
+            <li>Обязательно стилизовать игру (в произвольном стиле)</li>
+            <li>Перемещение плиток и заполнение шкалы должны быть плавно анимированы</li>
+            <li>Помимо клика, плитка должна перемещаться с помощью нажатия клавиши Enter</li>
+            <li>До тех пор пока одна плитка окончательно не переместилась на пустую ячейку, никакая другая плитка не должна двигаться</li>
+        </ol>
+    </div>
+
+</body>
+</html>

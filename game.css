@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#game-wrapper{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#progress__wrapper{
+  display: block;
+  background-color: cyan;
+  box-shadow: cyan 0 0 5px 5px;
+  border-radius: 3px;
+  width: 60%;
+  min-width: 200px;
+  margin: 20px auto;
+}
+
+#progress__wrapper>h2, #progress__message{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 83, 83);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#progress__message{
+  font-size: small;
+}
+
+.progress__border{
+  margin: 20px auto;
+  padding: 0 4px;
+  border: solid 2px darkcyan;
+  border-radius: 10px;
+  box-shadow: darkcyan 0 0 2px 2px;
+  height: 17px;
+  width: 90%;
+}
+
+.progress__bar{
+  margin: 4px 0;
+  background-color: yellow;
+  height: 5px;
+  width: 0%;
+  box-shadow: yellow 0 0 3px 3px;
+  transition: ease-in-out width 200ms;
+}
+
+
+
+.game-field, .sample-game-field{
+  margin: 50px auto;
+  border-radius: 2px;
+  box-shadow: black 0px 0px 5px 5px;
+  background-color: black;
+  position: relative;
+}
+.sample-game-field{
+  margin-left: 10px;
+}
+
+.sample-fields{
+  display: flex;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 83, 83);
+  text-align: center;
+}
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 83, 83);
+
+  display: inline-block;
+  margin: auto 0 auto 20px;  
+}
+
+.cell{
+  position: absolute;
+  border: 1px rgb(0, 73, 73);
+  box-shadow: black inset 0 0 5px;
+  transition: all 150ms;
+  cursor: pointer;
+}
+
+.cell.color-yellow{
+  background-color: rgb(255, 255, 124);
+  
+}
+
+.cell.color-red{
+  background-color: rgb(255, 109, 109);
+}
+
+.cell.color-blue{
+  background-color: rgb(175, 175, 255);
+}
+
+.cell.color-green{
+  background-color: lightgreen;
+}
+
+.cell.color-any{
+  background-color: darkslategray;
+}
+
+
+.cell.color-empty{
+  background-color: rgba(0, 73, 73, 0);
+  box-shadow: none;
+  border: none;
+}
